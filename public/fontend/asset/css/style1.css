@@ -1,0 +1,581 @@
+
+body {
+    background-repeat: no-repeat;
+    background-image: url("../img/media/4.jpg");
+    background-size: cover;
+    background-position: center;
+max-height: 100vh;
+
+
+
+
+
+    font-family: sahel;
+
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #abb93f;
+    font-size: 18px;
+}
+
+a,
+h2,
+h3,
+h4 {
+    color: #ffffff;
+}
+
+/*font*/
+@font-face {
+    font-family: 'sahel' ;
+    src: url('/asset/font/Sahel.woff') format('woff');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #ffffff;
+
+}
+
+.icon-art:focus,
+.icon-art:after,
+.icon-art:hover {
+    color: #5891d6;
+    font-size: 50px;
+    text-shadow:7px 7px 7px #040d17;
+
+}
+
+.icon-art {
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow:7px 7px 7px #040d17;
+
+
+}
+
+.icon-art-text {
+    box-shadow: 8px 8px 8px #1d1d1d;
+    border-top-right-radius: 15px;
+
+}
+
+
+.billboard {
+    box-shadow: 7px 6px 7px #212121;
+
+}
+
+
+.icon-text:hover {
+    font-size: 14px;
+    text-shadow: 7px 9px 14px #000000;
+}
+.icon-text:focus,
+.icon-text {
+    color: #434343;
+    font-size: 14px;
+    text-shadow: 7px 9px 14px #000000;
+}
+
+
+.brand-art:focus,
+.brand-art:hover,
+.brand-art {
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 7px 9px 12px #000000;
+}
+
+/*customize*/
+.nav-art {
+}
+
+.input-search-icon {
+    background-color: #e6e6e6;
+    color: #ffffff;
+    border: #ffffff;
+    border-radius: 10px;
+    font-size: 11px;
+
+    margin-top: 9px;
+    margin-left: 30px;
+}
+
+.input-search {
+    background-image: linear-gradient(#888888, #ffffff, #ffffff);
+    color: #000000;
+    border: #132334;
+    border-radius: 10px;
+    margin-right: 0px
+}
+
+.input-search:hover,
+.input-search:focus {
+    background-color: #ffffff;
+    border: #ffffff;
+    color: #132334;
+    border-radius: 10px;
+
+
+}
+
+.nav-dropdown {
+    padding-right: 1px;
+    margin-right: 40px;
+    padding-top: 14px;
+}
+
+.navbar-brand {
+    text-shadow: 2px 5px 4px #d2caca;;
+}
+
+.register {
+    background-color: #cc2c44;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+
+}
+
+.slash {
+    background-color: #cc2c44;
+
+}
+
+.login {
+    background-color: #cc2c44;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+
+}
+
+.register-login:hover {
+    background-color: #ffffff;
+    color: #abb93f;
+
+}
+
+.img-art {
+}
+.btn-slider{
+    border: 2px solid #4d80e4;
+    border-radius: 3px;
+    background-color: #4d80e4;
+    color: #e6e6e6;
+    text-decoration:none;
+
+}
+.btn-menu{
+    text-decoration:none;
+    margin-top: 25px;
+    color: #040d17;
+    font-size: 14px;
+    text-shadow: 7px 9px 14px #000000;
+
+
+}
+.btn-menu:hover{
+    background-color: #ffffff;
+    color: #4d80e4;
+
+}
+.btn-header{
+    border-radius: 10px;
+
+}
+.btn-header:hover{
+    border: 2px solid #4d80e4;
+    box-shadow: 7px 7px 7px #040d17;
+}
+
+/*///////////////////////////////////////سرچ پیشرفته//////////////////////*/
+
+
+#advanced-search-form h2 {
+    padding-bottom: 20px;
+    margin: 10px 20px;
+    font-size: 24px;
+    text-align: right;
+}
+
+#advanced-search-form hr {
+    margin-top: 38px;
+    margin-bottom: 54px;
+    margin-left: 3px;
+    border: 1px solid #cccccc;
+}
+
+#advanced-search-form .form-group {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+
+#advanced-search-form .form-control {
+    padding: 12px 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+#advanced-search-form .radio-inline {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#advanced-search-form .gender {
+    width: 30%;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#advanced-search-form .btn {
+    width: 46%;
+    margin: 20px auto 0;
+    display: block;
+    outline: none;
+}
+
+@media screen and (max-width: 800px) {
+    #advanced-search-form .form-group {
+        width: 45%;
+    }
+
+    #advanced-search-form {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #advanced-search-form .form-group {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #advanced-search-form h2 {
+        text-align: center;
+    }
+}
+
+.label-art {
+    text-align: right;
+    font-size: 24px;
+    padding-left: 90px;
+
+}
+
+/*////////////////////////////////////////////دراپ دون حرفه ای خودم////////////////////////////////////////////*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+
+.menu {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-title {
+    display: block;
+    width: $ menu_WIDTH;
+    height: 40px;
+    padding: 12px 0 0;
+    background: #ffffff;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s background-color;
+}
+
+.menu-title:before {
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 5px solid #000000;
+    border-left: ($ menu_WIDTH / 2) solid transparent;
+    border-right: ($ menu_WIDTH / 2) solid transparent;
+    border-bottom: 0 solid #dddddd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 101;
+    transition: 0.2s 0.2s border-top ease-out,
+    0.3s border-top-color;
+}
+
+.menu-title:hover {
+    background: #000000;
+}
+
+.menu-title:hover:before {
+    border-top-color: #000000;
+}
+
+.menu:hover > .menu-title:before {
+    border-top-width: 0;
+    transition: 0.2s border-top-width ease-in,
+    0.3s border-top-color;
+}
+
+.menu-title:after {
+    content: "";
+    display: block;
+    height: 0;
+    border-left: ($ menu_WIDTH / 2) solid transparent;
+    border-right: ($ menu_WIDTH / 2) solid transparent;
+    border-bottom: 0 solid #ebebeb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+    transition: 0.2s border-bottom ease-in;
+}
+
+.menu:hover > .menu-title:after {
+    border-bottom-width: 5px;
+    transition: 0.9s 0.9s border-bottom-width ease-out;
+}
+
+.menu-title_2nd {
+    background: #4d80e4;
+}
+
+.menu-title_2nd:hover {
+    background: #4d80e4;
+}
+
+.menu-title_2nd:before {
+    border-top-color: #4d80e4;
+}
+
+.menu-title_2nd:hover:before {
+    border-top-color: #4d80e4;
+}
+
+.menu-title_3rd {
+    background: #c97676;
+}
+
+.menu-title_3rd:hover {
+    background: #b96666;
+}
+
+.menu-title_3rd:before {
+    border-top-color: #c97676;
+}
+
+.menu-title_3rd:hover:before {
+    border-top-color: #b96666;
+}
+
+.menu-title_4th {
+    background: #dbab58;
+}
+
+.menu-title_4th:hover {
+    background: #cb9b48;
+}
+
+.menu-title_4th:before {
+    border-top-color: #dbab58;
+}
+
+.menu-title_4th:hover:before {
+    border-top-color: #cb9b48;
+}
+
+.menu-dropdown {
+    min-width: 100%;
+    padding: 15px 0;
+    border-radius: 20px;
+    opacity: 90%;
+    background: #ffffff;
+    z-index: 100;
+    transition:3s padding,
+    0.5s background;
+}
+
+.menu-dropdown:after {
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 1px solid;
+    border-left: ($ menu_WIDTH / 2) solid transparent;
+    border-right: ($ menu_WIDTH / 2) solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 101;
+    transition: 0.5s border-top;
+}
+
+.menu:not(:hover) > .menu-dropdown {
+    padding: 4px 0;
+    background: none;
+    z-index: 99;
+}
+
+.menu:not(:hover) > .menu-dropdown:after {
+    border-top-color: #dddddd;
+}
+
+.menu:not(:hover) > .menu-title:after {
+    border-bottom-color: #dddddd;
+}
+
+.menu-dropdown > * {
+    overflow: hidden;
+    height: 100px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0);
+    white-space: nowrap;
+    transition: 0.5s height cubic-bezier(.73, .32, .34, 1.5),
+    0.5s padding cubic-bezier(.73, .32, .34, 1.5),
+    0.5s margin cubic-bezier(.73, .32, .34, 1.5),
+    0.5s 0.2s color,
+    0.2s background-color;
+}
+
+.menu-dropdown > *:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu:not(:hover) > .menu-dropdown > * {
+    visibility: hidden;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    color: rgba(25, 25, 25, 0);
+    transition: 0.5s 0.1s height,
+    0.5s 0.1s padding,
+    0.5s 0.1s margin,
+    0.3s color,
+    0.6s visibility;
+    z-index: 99;
+}
+
+.hList {
+/ / overflow: hidden;
+}
+
+.hList > * {
+    float: left;
+}
+
+.hList > * + * {
+    margin-left: 0;
+}
+
+
+View Compiled
+    /*/////////////////////////////////////////////////فوووووووووووتررررر////////////////////*/
+
+
+header {
+    position: relative;
+    height: 5px;
+    overflow: hidden;
+    opacity: 70%;
+
+}
+
+.header__bg {
+
+    transform:  translate(50px, 100px);
+    transform-origin: top right;
+}
+
+h1 {
+    margin: 0;
+    padding: 100px 0;
+    font: 44px "Arial";
+    text-align: center;
+}
+
+header h1 {
+    position: relative;
+    color: #030c28;
+}
+.btn-art-2:hover,
+.brand-art:focus
+{
+    font-size: 14px;
+    background-color: #4d80e4;
+    border: 2px solid #4d80e4;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px #000000;
+    color: #000000;
+    list-style: none;
+    text-decoration:none;
+}
+
+.btn-art-2 {
+    font-size: 14px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px #030c28;
+    color: #000000;
+    list-style: none;
+    text-decoration:none;
+}
+
+/* Dropdown Button */
+
+/* The container <div> - needed to position the dropdown content */
+
+
+/*================================================================================*/
+.dropdown-1 {
+    width: 600px;
+
+}
+
+.dropdown-1:hover > .dropdown-menu {
+    display: block;
+    top: 90% ;
+    right:8%;
+    border-radius: 8px;
+    box-shadow: 17px 17px 17px #000000 ;
+    direction: rtl;
+
+}
+
+/*/////////////////glassmorfism/////////////////////*/
+
+/* This was made with GlassGenerator.netlify.app */
+
+
+.glass-container{
+    width: 111px;
+    height: 133px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 49px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0,191,255, 0);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 5px rgba(255,255,255,0.4) solid;
+    border-bottom: 1px rgba(40,40,40,0.35) solid;
+    border-right: 1px rgba(40,40,40,0.35) solid;
+}

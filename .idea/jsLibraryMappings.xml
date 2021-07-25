@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@popperjs/core, all, bootstrap, bootstrap-theme, bootstrap.bundle, font-awesome, font-face, html5shiv, jquery-1.11.1, jquery-3.2.1.slim, jquery-3.5.1, jquery-3.6.0, materialdesignicons, popper.js, respond, select2, shieldui-all, toastr.js}" />
+  </component>
+</project>
