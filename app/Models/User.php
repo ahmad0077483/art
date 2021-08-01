@@ -101,6 +101,11 @@ class User extends Authenticatable
         return $this->hasMany(Order::class);
     }
 
+    public function information(){
+
+        return $this->hasOne(Information::class);
+    }
+
 
 
 }

@@ -8,6 +8,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <!-- Styles -->
     <link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v21.2.1/dist/font-face.css" rel="stylesheet"
@@ -34,6 +36,12 @@
 
 </head>
 <body>
+<a class="nav-link justify-content-end " href="{{asset('/')}}"
+>
+                    <span style="font-size:65px;text-shadow:7px 7px 7px #0b0e19; color: #dddddd"
+                          class="material-icons  ">home</span>
+
+</a>
 <div class="container btn-shadow d-flex" dir="rtl">
     <div class="col-lg-12 co-12    bg-white " dir="rtl">
         <div class="row m-0">
@@ -69,7 +77,7 @@
 
                         <div class="col-12 d-flex mb-1">
                             <p class="price-pro"> تعداد بازدید :</p>
-                            <p class="mx-auto">{{\Illuminate\Support\Facades\Redis::get("views.{$product->id}.products")}}     </p>
+                            <p class="mx-auto">{{$product->view_count}}</p>
 
 
 {{--                                @php--}}
@@ -104,8 +112,9 @@
                                 <div class="row">
                                     <div class="col-lg-6 pb-2 d-flex">
                                         <btn onclick="document.getElementById('add-to-cart').submit()" href="#"
-                                             class="btn btn-sm btn-danger "><h5>اضافه کردن به سبد خرید</h5></btn>
+                                             class="btn btn-sm btn-success "><h5>اضافه کردن به سبد خرید</h5></btn>
                                         @endif
+
 
 
                                     </div>

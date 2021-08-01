@@ -272,4 +272,11 @@ Route::middleware(['auth:sanctum'])->get('payment/callback', [\App\Http\Controll
 Route::resource('orders', \App\Http\Controllers\OrederbackController::class);
 Route::get('orders/{order}/orders', [\App\Http\Controllers\OrederbackController::class, 'payments'])->name('orders.payments');
 
+//Route Information------------------------------------------------------------------------
+
+Route::get('/information/web', [\App\Http\Controllers\InformationController::class, 'InformationWeb'])->name('information.web');
+Route::get('/information/delete/{id}', [\App\Http\Controllers\InformationController::class, 'DeleteInformation']);
+
+Route::get('information', [\App\Http\Controllers\InformationController::class, 'Create'])->name('information');
+Route::post('information', [\App\Http\Controllers\InformationController::class, 'Save'])->name('Information.form');
 

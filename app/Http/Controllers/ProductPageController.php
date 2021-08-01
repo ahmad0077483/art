@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Product;
+use Carbon\Carbon;
 use EloquentBuilder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,6 +18,7 @@ class ProductPageController extends Controller
     {
 
         $product = Product::query();
+
 
         $category = request('category');
         if (isset($category) && trim($category) != '' && $category != 'all') {
@@ -46,9 +49,9 @@ class ProductPageController extends Controller
 
 
 
+            $products= $product->latest()->paginate(20);
 
-        $products= $product->latest()->paginate(20);
-
+        $product->increment('view_count');
 
         return view('layouts.body.pro.pro',compact('products'));
 
@@ -57,7 +60,7 @@ class ProductPageController extends Controller
 
     public function single(Product $product){
 
-        Redis::incr("views.{$product->id}.products");
+        $product->increment('view_count');
 
 return view('layouts.body.pro.single-product',compact('product',));
 

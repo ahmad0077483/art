@@ -72,4 +72,10 @@ class Product extends Model
     }
 
 
+    public function information(){
+
+        return  $this->belongsTo(Information::class);
+    }
+
+
 }

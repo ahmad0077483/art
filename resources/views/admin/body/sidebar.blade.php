@@ -116,6 +116,12 @@
 
                                 </a>
                             </li>
+                            <li class="active">
+                                <a class="sidenav-item-link" href="{{route('information.web')}}">
+                                    <span class="nav-text">اطلاعات خریدار</span>
+
+                                </a>
+                            </li>
 
 
 
@@ -148,6 +154,7 @@
 
                                 </a>
                             </li>
+
 
                         </div>
                     </ul>

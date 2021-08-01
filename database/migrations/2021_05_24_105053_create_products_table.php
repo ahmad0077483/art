@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->integer('inventory')->default(0);
             $table->integer('price');
-            $table->integer('view-count')->default(0);
+            $table->integer('view_count')->default(0);
             $table->timestamps();
         });
     }

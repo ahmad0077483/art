@@ -13,6 +13,8 @@
 <!-- Styles -->
 <link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v21.2.1/dist/font-face.css" rel="stylesheet" type="text/css"/>
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="{{asset('fontend/asset/js/jquery-2.1.4.min.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -26,6 +28,13 @@
 <div class=" container card px-3 my-5  ">
     <!-- Shopping cart table -->
     <div class="bg-light" >
+        <a class="nav-link justify-content-end " href="{{asset('/')}}"
+        >
+                    <span style="font-size:65px;text-shadow:7px 7px 7px #0b0e19; color: #dddddd"
+                          class="material-icons  ">home</span>
+
+        </a>
+
         <div class="card-header bg-dark">
             <h2 class="text-center text-light">سبد خرید</h2>
         </div>
@@ -198,9 +207,13 @@
                 <form action="{{route('cart.payment')}}" method="post" id="cart-payment">
                     @csrf
                 </form>
+                <a href="{{url('information')}}" class="btn btn-sm btn-info mx-4"><h5>نهایی کردن اطلاعات خریدار</h5></a>
+
                 <button onclick="document.getElementById('cart-payment').submit()" type="button"
-                        class="btn btn-lg btn-primary mt-2">پرداخت
+                        class="btn btn-lg btn-success mt-2">پرداخت
                 </button>
+
+
             </div>
 
         </div>

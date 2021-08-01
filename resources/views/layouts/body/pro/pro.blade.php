@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -173,7 +176,21 @@ $product=\App\Models\Product::all();
 @endphp
 
 <br><br>
+<div class="d-flex justify-content-center">
+    <a class="nav-link justify-content-end  " href="{{asset('/')}}"
+      >
+                    <span style="font-size:65px;text-shadow:7px 7px 7px #0b0e19; color: #dddddd"
+                          class="material-icons  ">home</span>
 
+    </a>
+    <a class="nav-link justify-content-end  " href="{{asset('/cart')}}"
+    >
+                    <span style="font-size:65px;text-shadow:7px 7px 7px #0b0e19; color: #dddddd"
+                          class="material-icons  ">shopping_cart</span>
+
+    </a>
+
+</div>
 <div class="text-center justify-content-center align-content-center align-items-center">
 
     <form class="mx-auto" method="post" action="{{route('product.search')}}">
@@ -278,7 +295,7 @@ $product=\App\Models\Product::all();
                     <div class="thumbnail text-center ">
 
 
-                        <img class="img-responsive img-fluid {{$key==0 ? 'active' : ''}}" onclick="change_image(this)"
+                        <img class="img-responsive img-fluid {{$key==0 ? 'active' : ''}}"
                              src="{{$product->image , }}" width="70" >
 
                     </div>
@@ -300,7 +317,8 @@ $product=\App\Models\Product::all();
                           <div content="heart-btn">
                               <div class="content">
                                   <span class="heart text-right">تعداد بازدید:</span>
-                                  <span id="{{$product->view_count}}" style="color:grey "  class="mx-auto">{{\Illuminate\Support\Facades\Redis::get("views.{$product->id}.products")}}     </span>
+
+                                  <span  style="color:grey "  class="mx-auto"> {{$product->view_count}}    </span>
 
                               </div>
 

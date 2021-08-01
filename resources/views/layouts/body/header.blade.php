@@ -11,7 +11,7 @@
             <li class="nav-item dropdown d-inline-flex justify-content-end mx-auto">
                 <a class="nav-link justify-content-end  " href="#" id="navbarScrollingDropdown2" role="button"
                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <span style="font-size:40px;text-shadow:7px 7px 7px #0b0e19"
+                    <span style="font-size:55px;text-shadow:7px 7px 7px #0b0e19; color: #faf9f9"
                           class="material-icons  ">how_to_reg</span>
 
                 </a>
